@@ -1,0 +1,305 @@
+const int pos = 1
+const int pos2 = 2
+const int pos3 = 3
+const int pos4 = 4
+const int pos5 = 5
+const int pos6 = 6
+const int pos7 = 7
+const int pos8 = 8
+const int pos9 = 9
+const int neg = 10
+const int neg2 = 11
+const int neg3 = 12
+
+void setup(){
+  pinMode(pos, OUTPUT);
+  pinMode(pos2, OUTPUT);
+  pinMode(pos3, OUTPUT);
+  pinMode(pos4, OUTPUT);
+  pinMode(pos5, OUTPUT);
+  pinMode(pos6, OUTPUT);
+  pinMode(pos7, OUTPUT);  
+  pinMode(pos8, OUTPUT);
+  pinMode(pos9, OUTPUT);  
+  pinMode(neg, OUTPUT);
+  pinMode(neg2, OUTPUT);
+  pinMode(neg3, OUTPUT);
+}
+
+void loop(){
+ pillar(pos, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos3, neg, neg2, neg3);
+ pillar(pos4, neg, neg2, neg3);
+ pillar(pos5, neg, neg2, neg3);
+ pillar(pos6, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+ pillar(pos8, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar2(pos9, neg, neg2, neg3);
+ pillar2(pos8, neg, neg2, neg3);
+ pillar2(pos7, neg, neg2, neg3);
+ pillar2(pos6, neg, neg2, neg3);
+ pillar2(pos5, neg, neg2, neg3);
+ pillar2(pos4, neg, neg2, neg3);
+ pillar2(pos3, neg, neg2, neg3);
+ pillar2(pos2, neg, neg2, neg3);
+ pillar2(pos, neg, neg2, neg3);
+     plus(pos, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, neg, neg2, neg3);
+     square(pos, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, neg, neg2, neg3);
+ pillar(pos, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+  pillar(pos, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+  pillar(pos, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+  pillar(pos, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+  pillar(pos, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+  pillar(pos, neg, neg2, neg3);
+ pillar(pos2, neg, neg2, neg3);
+ pillar(pos9, neg, neg2, neg3);
+ pillar(pos7, neg, neg2, neg3);
+ load(pos, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, neg, neg2, neg3);
+ plus2(pos, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, neg, neg2, neg3);
+                                                                //Add in the original codes and others under a function
+}
+
+void pillar(int w, int x, int y, int z){
+    digitalWrite(w, HIGH);
+    digitalWrite(x, HIGH);
+    digitalWrite(y, HIGH);
+    digitalWrite(z, HIGH);
+    delay(1000);
+    digitalWrite(w, LOW);
+    digitalWrite(x, LOW);
+    digitalWrite(y, LOW);
+    digitalWrite(z, LOW);
+    delay(500);
+  }
+  
+  void pillar2(int w, int x, int y, int z){
+    digitalWrite(w, HIGH);
+    digitalWrite(x, HIGH);
+    delay(100);
+    digitalWrite(y, HIGH);
+    delay(100);
+    digitalWrite(z, HIGH);
+    delay(1000);
+    digitalWrite(w, LOW);
+    digitalWrite(x, LOW);
+    digitalWrite(y, LOW);
+    digitalWrite(z, LOW);
+    delay(500);
+  }
+  
+  void plus(int a, int b, int c, int d, int e, int f, int g, int h, int i, int J, int K, int L){
+    digitalWrite(b, HIGH);
+    digitalWrite(J, HIGH);
+    digitalWrite(K, HIGH);
+    digitalWrite(L, HIGH);
+    delay(500);
+    digitalWrite(a, HIGH);
+    delay(50);
+    digitalWrite(a, LOW);
+    delay(50);
+    digitalWrite(d, HIGH)
+    delay(500);
+    digitalWrite(g, HIGH);
+    delay(50);
+    digitalWrite(g, LOW);
+    delay(50);
+    digitalWrite(h, HIGH);
+    delay(500);
+    digitalWrite(i, HIGH);
+    delay(50);
+    digitalWrite(i, LOW);
+    delay(50);
+    digitalWrite(f, HIGH);
+    delay(500);
+    digitalWrite(c, HIGH);
+    delay(50);
+    digitalWrite(c, LOW);
+    delay(50);
+    digitalWrite(b, LOW);
+    digitalWrite(J, HIGH);
+    digitalWrite(K, HIGH);
+    digitalWrite(L, HIGH);
+    delay(500);
+    digitalWrite(a, HIGH);
+    delay(50);
+    digitalWrite(a, LOW);
+    delay(50);
+    digitalWrite(d, LOW)
+    delay(500);
+    digitalWrite(g, HIGH);
+    delay(50);
+    digitalWrite(g, LOW);
+    delay(50);
+    digitalWrite(h, LOW);
+    delay(500);
+    digitalWrite(i, HIGH);
+    delay(50);
+    digitalWrite(i, LOW);
+    delay(50);
+    digitalWrite(f, LOW);
+    delay(500);
+    digitalWrite(c, HIGH);
+    delay(50);
+    digitalWrite(c, LOW);
+    delay(50);
+  }
+    
+  void square(int a, int b, int c, int d, int e, int f, int g, int h, int i, int J, int K, int L){
+    digitalWrite(J, HIGH);
+    digitalWrite(K, HIGH);
+    digitalWrite(L, HIGH);
+    digitalWrite(a, HIGH);
+    delay(200);
+    digitalWrite(b, HIGH);
+    delay(200);
+    digitalWrite(c, HIGH);
+    delay(200);
+    digitalWrite(d, HIGH);
+    delay(200);
+    digitalWrite(f, HIGH);
+    delay(200);
+    digitalWrite(g, HIGH);
+    delay(200);
+    digitalWrite(h, HIGH);
+    delay(200);
+    digitalWrite(i, HIGH);
+    delay(2000);
+  }
+  void load(int a, int b, int c, int d, int e, int f, int g, int h, int i, int J, int K, int L){
+    digitalWrite(J, HIGH);
+    digitalWrite(a, HIGH);
+    delay(50);
+    digitalWrite(b, HIGH);
+    delay(50);
+    digitalWrite(c, HIGH);
+    delay(200);
+    digitalWrite(d, HIGH);
+    delay(50);
+    digitalWrite(e, HIGH);
+    delay(50);
+    digitalWrite(f, HIGH);
+    delay(200);
+    digitalWrite(g, HIGH);
+    delay(50);
+    digitalWrite(h, HIGH);
+    delay(50);
+    digitalWrite(i, HIGH);
+    delay(1000);
+    digitalWrite(K, HIGH);
+    delay(500);
+    digitalWrite(L, HIGH);
+    delay(1000);
+    digitalWrite(L, LOW);
+    delay(500);
+    digitalWrite(K, LOW);
+    delay(500);
+    digitalWrite(i, LOw);
+    delay(50);
+    digitalWrite(h, LOw);
+    delay(50);
+    digitalWrite(h, LOw);
+    delay(200);
+    digitalWrite(f, LOw);
+    delay(50);
+    digitalWrite(e, LOw);
+    delay(50);
+    digitalWrite(d, LOw);
+    delay(200);
+    digitalWrite(c, LOw);
+    delay(50);
+    digitalWrite(b, LOw);
+    delay(50);
+    digitalWrite(a, LOw);
+    delay(500);
+  }
+  
+  
+  void plus2(int a, int b, int c, int d, int e, int f, int g, int h, int i, int J, int K, int L){
+     for(int x = 0;x < 500; x++){
+        digitalWrite(b, HIGH);
+        digitalWrite(K, HIGH);
+        digitalWrite(d, HIGH);
+        digitalWrite(h, HIGH);
+        digitalWrite(f, HIGH);
+        digitalWrite(e, HIGH);
+        delay(1);
+        digitalWrite(b, LOW);
+        digitalWrite(b, LOW);
+        digitalWrite(d, LOW);
+        digitalWrite(h, LOW);
+        digitalWrite(f, LOW);
+        digitalWrite(e, LOW);
+        digitalWrite(e, HIGH);
+        digitalWrite(J, HIGH);
+        digitalWrite(K, HIGH);
+        digitalWrite(L, HIGH);
+        delay(1);
+      }
+        digitalWrite(b, LOW);
+        digitalWrite(K, LOW);
+        digitalWrite(d, LOW);
+        digitalWrite(h, LOW);
+        digitalWrite(f, LOW);
+        digitalWrite(e, LOW);
+        digitalWrite(e, LOW);
+        digitalWrite(J, LOW);
+        digitalWrite(L, LOW);
+        delay(1);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
