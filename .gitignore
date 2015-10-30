@@ -1,0 +1,19 @@
+const int pos = 1
+const int pos2 = 2
+const int pos3 = 3
+const int pos4 = 4
+const int pos5 = 5
+const int pos6 = 6
+const int pos7 = 7
+const int pos8 = 8
+const int pos9 = 9
+const int neg = 10
+const int neg2 = 11
+const int neg3 = 12
+
+void setup(){
+  pinMode(pos, OUTPUT);
+  pinMode(pos, OUTPUT);
+  pinMode(pos, OUTPUT);
+  pinMode(pos, OUTPUT);
+  pinMode(pos, OUTPUT);
